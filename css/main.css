@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap");
+html {
+  font-size: 16px;
+}
+
+header {
+  padding: 1.5em 0;
+}
+header .logo__area {
+  padding-right: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+header .logo__area .logo h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.65em;
+  font-weight: 700;
+  color: #105de2;
+}
+header .logo__area .logo h1 span {
+  position: relative;
+  display: inline-block;
+  color: #1a1c20;
+}
+header .logo__area .logo h1 span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 3px;
+  background-color: #105de2;
+}
+header .logo__area .logo h1 span::first-letter {
+  color: #105de2;
+}
+header .logo__area .mobile-num {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.55em;
+  font-weight: 500;
+  color: #1a1c20;
+}
+header .links {
+  padding-left: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+header .links nav ul li {
+  float: left;
+  margin-right: 2.5em;
+}
+header .links nav ul li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+header .links .buy-insurance {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  background-color: #105de2;
+  color: #fff;
+  padding: 0.6em 1.8em;
+  border-radius: 4px;
+}
+
+section {
+  position: relative;
+  padding-top: 5.5em;
+}
+section.hero .hero-theme {
+  padding-right: 4em;
+}
+section.hero .hero-theme .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  margin-bottom: 2em;
+}
+section.hero .hero-theme .title h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 1.3em;
+  color: #1a1c20;
+}
+section.hero .hero-theme .title h1 span {
+  color: #105de2;
+}
+section.hero .hero-theme .title img {
+  height: 4em;
+}
+section.hero .hero-theme .content {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 1.7em;
+  color: #1a1c20;
+}
+section.hero .hero-slider h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1.2em;
+  color: #1a1c20;
+  text-align: right;
+  word-spacing: -2px;
+}
+section.hero .hero-slider h1 span {
+  color: #105de2;
+}
+section.hero .hero-slider .slider-dots {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  margin-top: 4em;
+}
+section.hero .hero-slider .slider-dots .dot {
+  display: block;
+  height: 0.7em;
+  width: 0.7em;
+  border-radius: 50%;
+  background-color: #4d515e;
+  margin-left: 0.4em;
+}
+section.hero .hero-slider .slider-dots .dot.active {
+  height: 0.95em;
+  width: 0.95em;
+  background-color: #105de2;
+}
+section.slider-carousel .main-slider {
+  position: relative;
+  right: 3em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: initial;
+}
+section.slider-carousel .main-slider .slider-pic {
+  height: 26em;
+  width: 46em;
+  overflow: hidden;
+}
+section.slider-carousel .main-slider .slider-count {
+  height: 17em;
+  width: 17em;
+  background-color: #1a1c20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: initial;
+}
+section.slider-carousel .main-slider .slider-count .count {
+  display: block;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  font-size: 3.5em;
+  font-weight: 700;
+}
+section.slider-carousel .main-slider .slider-count .count sup {
+  font-size: 0.4em;
+  position: relative;
+  top: -1em;
+  left: -0.3em;
+  color: #4d515e;
+}
+
+/*# sourceMappingURL=main.css.map */

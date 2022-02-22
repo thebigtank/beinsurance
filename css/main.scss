@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
+
+@import 'variables.scss';
+@import 'mixins.scss';
+
+
+html {
+    font-size: 16px;
+}
+
+
+.wrapper {
+
+}
+
+header {
+    padding: 1.5em 0;
+    .logo__area {
+        padding-right: 4em;
+        @include setFlex(flex, center, space-between, initial);
+        .logo {
+            h1 {
+                @include setFont($robotoslab, 1.65em, 700);
+                color: $blue;
+                span {
+                    position: relative;
+                    display: inline-block;
+                    color: $matte-black;
+                    &::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 10px;
+                        width: 100%;
+                        height: 3px;
+                        background-color: $blue;
+                    }
+                    &::first-letter {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+        .mobile-num {
+            @include setFont($robotoslab, 1.55em, 500);
+            color: $matte-black;
+        }
+    }
+    .links {
+        padding-left: 4em;
+        @include setFlex(flex, center, space-between, initial);
+        nav {
+            ul {
+                li {
+                    float: left;
+                    margin-right: 2.5em;
+                    a {
+                        @include setFont($poppins, .85em, 600);
+                    }
+                }
+            }
+        }
+        .buy-insurance {
+            @include btn;
+        }
+    }
+}
+
+section {
+    position: relative;
+    padding-top: 5.5em;
+    &.hero {
+        .hero-theme {
+            padding-right: 4em;
+            .title {
+                @include setFlex(flex, center, space-between, initial);
+                margin-bottom: 2em;
+                h1 {
+                    @include setFont($robotoslab, 3em, 800);
+                    line-height: 1.3em;
+                    color: $matte-black;
+                    span {
+                        color: $blue;
+                    }
+                }
+                img {
+                    height: 4em;
+                }
+            }
+            .content {
+                @include setFont($poppins, .9em, 500);
+                line-height: 1.7em;
+                color: $matte-black;
+            }
+        }
+        .hero-slider {
+            h1 {
+                @include setFont($robotoslab, 3em, 900);
+                line-height: 1.2em;
+                color: $matte-black;
+                text-align: right;
+                word-spacing: -2px;  
+                span {
+                    color: $blue;
+                }
+            }
+            .slider-dots {
+                float: right;
+                @include setFlex(flex, center, space-between, initial);
+                margin-top: 4em;
+                .dot {
+                    display: block;
+                    height: .7em;
+                    width: .7em;
+                    border-radius: 50%;
+                    background-color: $ash;
+                    margin-left: .4em;
+                    &.active {
+                        height: .95em;
+                        width: .95em;
+                        background-color: $blue;
+                    }
+                }
+            }
+        }
+    }
+    &.slider-carousel {
+        .main-slider {
+            position: relative;
+            right: 3em;
+            @include setFlex(flex, flex-start, flex-start, initial);
+            .slider-pic {
+                height: 26em;
+                width: 46em;
+                overflow: hidden;
+            }
+            .slider-count {
+                height: 17em;
+                width: 17em;
+                background-color: $matte-black;
+                @include setFlex(flex, center, center, initial);
+                .count {
+                    display: block;
+                    color: #fff;
+                    @include setFont($robotoslab, 3.5em, 700);
+                    sup {
+                        font-size: .4em;
+                        position: relative;
+                        top: -1em;
+                        left: -0.3em;
+                        color: $ash;
+                    }
+                }
+            }
+        }
+    }
+}

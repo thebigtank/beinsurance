@@ -1,0 +1,20 @@
+@mixin setFlex ($flex, $alignItems, $justifyContent, $flexdirection) {
+    display: $flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+    flex-direction: $flexdirection;
+}
+
+@mixin setFont ($family, $size, $weight) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin btn {
+    @include setFont($poppins, .9em, 500);
+    background-color: $blue;
+    color: #fff;
+    padding: .6em 1.8em;
+    border-radius: 4px;
+}
