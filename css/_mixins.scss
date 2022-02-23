@@ -12,7 +12,7 @@
 }
 
 @mixin btn {
-    @include setFont($poppins, .9em, 500);
+    @include setFont($poppins, .8em, 500);
     background-color: $blue;
     color: #fff;
     padding: .6em 1.8em;

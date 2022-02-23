@@ -33,7 +33,7 @@ header {
   padding: 1.5em 0;
 }
 header .logo__area {
-  padding-right: 3em;
+  padding: 0 2.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,7 +69,7 @@ header .logo__area .mobile-num {
   color: #1a1c20;
 }
 header .links {
-  padding-left: 3em;
+  padding: 0 2.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,13 +81,13 @@ header .links nav ul li {
 }
 header .links nav ul li a {
   font-family: "Poppins", sans-serif;
-  font-size: 0.85em;
+  font-size: 0.8em;
   font-weight: 600;
   color: #fff;
 }
 header .links .buy-insurance {
   font-family: "Poppins", sans-serif;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: 500;
   background-color: #105de2;
   color: #fff;
@@ -100,7 +100,7 @@ section {
   padding-top: 5.5em;
 }
 section.hero .hero-theme {
-  padding-right: 4em;
+  padding: 0 2.5em;
 }
 section.hero .hero-theme .title {
   display: flex;
@@ -111,7 +111,7 @@ section.hero .hero-theme .title {
 }
 section.hero .hero-theme .title h1 {
   font-family: "Roboto Slab", serif;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 800;
   line-height: 1.3em;
   color: #1a1c20;
@@ -124,14 +124,17 @@ section.hero .hero-theme .title img {
 }
 section.hero .hero-theme .content {
   font-family: "Poppins", sans-serif;
-  font-size: 0.9em;
+  font-size: 0.85em;
   font-weight: 500;
   line-height: 1.7em;
   color: #1a1c20;
 }
+section.hero .hero-slider {
+  padding-right: 2.5em;
+}
 section.hero .hero-slider h1 {
   font-family: "Roboto Slab", serif;
-  font-size: 3.05em;
+  font-size: 2.9em;
   font-weight: 700;
   line-height: 1.2em;
   color: #fff;
@@ -162,30 +165,19 @@ section.hero .hero-slider .slider-dots .dot.active {
   width: 0.85em;
   background-color: #105de2;
 }
-section.slider-carousel .main-slider {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: initial;
-}
-section.slider-carousel .main-slider .slider-pic {
-  height: 25em;
-  width: 45em;
+section.slider-carousel .slider-pic {
   overflow: hidden;
-  position: relative;
-  left: -3em;
 }
-section.slider-carousel .main-slider .slider-actions {
-  width: 38em;
+section.slider-carousel .slider-actions {
+  width: 640px;
+  padding-right: 2.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: initial;
   position: absolute;
-  right: 0;
 }
-section.slider-carousel .main-slider .slider-actions .slider-count {
+section.slider-carousel .slider-actions .slider-count {
   height: 16.5em;
   width: 17em;
   background-color: #1a1c20;
@@ -194,14 +186,14 @@ section.slider-carousel .main-slider .slider-actions .slider-count {
   justify-content: center;
   flex-direction: initial;
 }
-section.slider-carousel .main-slider .slider-actions .slider-count .count {
+section.slider-carousel .slider-actions .slider-count .count {
   display: block;
   color: #fff;
   font-family: "Roboto Slab", serif;
   font-size: 3.5em;
   font-weight: 700;
 }
-section.slider-carousel .main-slider .slider-actions .slider-count .count sup {
+section.slider-carousel .slider-actions .slider-count .count sup {
   font-size: 0.38em;
   font-weight: 800;
   position: relative;
@@ -209,30 +201,30 @@ section.slider-carousel .main-slider .slider-actions .slider-count .count sup {
   left: -0.3em;
   color: #4e515e;
 }
-section.slider-carousel .main-slider .slider-actions .slider-line {
+section.slider-carousel .slider-actions .slider-line {
   width: 16em;
-  height: 0.14em;
+  height: 0.12em;
   background-color: #4e515e;
   position: absolute;
   left: 14em;
 }
-section.slider-carousel .main-slider .slider-actions .slider-line .inner {
+section.slider-carousel .slider-actions .slider-line .inner {
   display: block;
   height: inherit;
   width: 40%;
   background-color: #105de2;
 }
-section.slider-carousel .main-slider .slider-actions .slider-navigation {
+section.slider-carousel .slider-actions .slider-navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: initial;
-  width: 5.3em;
+  width: 4.8em;
   float: right;
 }
-section.slider-carousel .main-slider .slider-actions .slider-navigation span {
-  height: 2.4em;
-  width: 2.4em;
+section.slider-carousel .slider-actions .slider-navigation button {
+  height: 2.2em;
+  width: 2.2em;
   background-color: #4e515e;
   border-radius: 50%;
   display: flex;
@@ -240,8 +232,8 @@ section.slider-carousel .main-slider .slider-actions .slider-navigation span {
   justify-content: center;
   flex-direction: initial;
 }
-section.slider-carousel .main-slider .slider-actions .slider-navigation span svg {
-  height: 1.3em;
+section.slider-carousel .slider-actions .slider-navigation button svg {
+  height: 1em;
   color: #fff;
 }
 

@@ -38,7 +38,8 @@ html {
 header {
     padding: 1.5em 0;
     .logo__area {
-        padding-right: 3em;
+        // padding-right: 3em;
+        padding: 0 2.5em;
         @include setFlex(flex, center, space-between, initial);
         .logo {
             h1 {
@@ -69,7 +70,8 @@ header {
         }
     }
     .links {
-        padding-left: 3em;
+        // padding-left: 3em;
+        padding: 0 2.5em;
         @include setFlex(flex, center, space-between, initial);
         nav {
             ul {
@@ -77,7 +79,7 @@ header {
                     float: left;
                     margin-right: 2.5em;
                     a {
-                        @include setFont($poppins, .85em, 600);
+                        @include setFont($poppins, .8em, 600);
                         color: #fff;
                     }
                 }
@@ -94,12 +96,12 @@ section {
     padding-top: 5.5em;
     &.hero {
         .hero-theme {
-            padding-right: 4em;
+            padding: 0 2.5em;
             .title {
                 @include setFlex(flex, center, space-between, initial);
                 margin-bottom: 2em;
                 h1 {
-                    @include setFont($robotoslab, 3em, 800);
+                    @include setFont($robotoslab, 2.5em, 800);
                     line-height: 1.3em;
                     color: $matte-black;
                     span {
@@ -111,14 +113,15 @@ section {
                 }
             }
             .content {
-                @include setFont($poppins, .9em, 500);
+                @include setFont($poppins, .85em, 500);
                 line-height: 1.7em;
                 color: $matte-black;
             }
         }
         .hero-slider {
+            padding-right: 2.5em;
             h1 {
-                @include setFont($robotoslab, 3.05em, 700);
+                @include setFont($robotoslab, 2.9em, 700);
                 line-height: 1.2em;
                 color: #fff;
                 text-align: right;
@@ -148,67 +151,59 @@ section {
         }
     }
     &.slider-carousel {
-        .main-slider {
-            position: relative;
-            @include setFlex(flex, flex-start, flex-start, initial);
-            .slider-pic {
-                height: 25em;
-                width: 45em;
-                overflow: hidden;
-                position: relative;
-                left: -3em;
+        .slider-pic {
+            overflow: hidden;
+        }
+        .slider-actions {
+            width: 640px;
+            padding-right: 2.5em;
+            @include setFlex(flex, center, space-between, initial);
+            position: absolute;
+            .slider-count {
+                height: 16.5em;
+                width: 17em;
+                background-color: $matte-black;
+                @include setFlex(flex, center, center, initial);
+                .count {
+                    display: block;
+                    color: #fff;
+                    @include setFont($robotoslab, 3.5em, 700);
+                    sup {
+                        font-size: .38em;
+                        font-weight: 800;
+                        position: relative;
+                        top: -1.2em;
+                        left: -0.3em;
+                        color: $ash;
+                    }
+                }
             }
-            .slider-actions {
-                width: 38em;
-                @include setFlex(flex, center, space-between, initial);
+            .slider-line {
+                width: 16em;
+                height: 0.12em;
+                background-color: $ash;
                 position: absolute;
-                right: 0;
-                .slider-count {
-                    height: 16.5em;
-                    width: 17em;
-                    background-color: $matte-black;
-                    @include setFlex(flex, center, center, initial);
-                    .count {
-                        display: block;
-                        color: #fff;
-                        @include setFont($robotoslab, 3.5em, 700);
-                        sup {
-                            font-size: .38em;
-                            font-weight: 800;
-                            position: relative;
-                            top: -1.2em;
-                            left: -0.3em;
-                            color: $ash;
-                        }
-                    }
+                left: 14em;
+                .inner {
+                    display: block;
+                    height: inherit;
+                    width: 40%;
+                    background-color: $blue;
                 }
-                .slider-line {
-                    width: 16em;
-                    height: 0.14em;
+            }
+            .slider-navigation {
+                @include setFlex(flex, center, space-between, initial);
+                width: 4.8em;
+                float: right;
+                button {
+                    height: 2.2em;
+                    width: 2.2em;
                     background-color: $ash;
-                    position: absolute;
-                    left: 14em;
-                    .inner {
-                        display: block;
-                        height: inherit;
-                        width: 40%;
-                        background-color: $blue;
-                    }
-                }
-                .slider-navigation {
-                    @include setFlex(flex, center, space-between, initial);
-                    width: 5.3em;
-                    float: right;
-                    span {
-                        height: 2.4em;
-                        width: 2.4em;
-                        background-color: $ash;
-                        border-radius: 50%;
-                        @include setFlex(flex, center, center, initial);
-                        svg {
-                            height: 1.3em;
-                            color: #fff;
-                        }
+                    border-radius: 50%;
+                    @include setFlex(flex, center, center, initial);
+                    svg {
+                        height: 1em;
+                        color: #fff;
                     }
                 }
             }
