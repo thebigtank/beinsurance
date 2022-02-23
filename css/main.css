@@ -131,8 +131,8 @@ section.hero .hero-theme .content {
 }
 section.hero .hero-slider h1 {
   font-family: "Roboto Slab", serif;
-  font-size: 3em;
-  font-weight: 900;
+  font-size: 3.05em;
+  font-weight: 700;
   line-height: 1.2em;
   color: #fff;
   text-align: right;
@@ -151,15 +151,15 @@ section.hero .hero-slider .slider-dots {
 }
 section.hero .hero-slider .slider-dots .dot {
   display: block;
-  height: 0.7em;
-  width: 0.7em;
+  height: 0.55em;
+  width: 0.55em;
   border-radius: 50%;
   background-color: #4e515e;
   margin-left: 0.4em;
 }
 section.hero .hero-slider .slider-dots .dot.active {
-  height: 0.95em;
-  width: 0.95em;
+  height: 0.85em;
+  width: 0.85em;
   background-color: #105de2;
 }
 section.slider-carousel .main-slider {
