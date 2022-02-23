@@ -3,11 +3,37 @@ html {
   font-size: 16px;
 }
 
+#landing {
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-bg {
+  height: 70em;
+  width: 56%;
+  background-color: red;
+  background-image: url("../assets/pic-02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.landing-bg::after {
+  content: "";
+  display: block;
+  height: inherit;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(26, 28, 32, 0.8);
+}
+
 header {
   padding: 1.5em 0;
 }
 header .logo__area {
-  padding-right: 4em;
+  padding-right: 3em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +69,7 @@ header .logo__area .mobile-num {
   color: #1a1c20;
 }
 header .links {
-  padding-left: 4em;
+  padding-left: 3em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,6 +83,7 @@ header .links nav ul li a {
   font-family: "Poppins", sans-serif;
   font-size: 0.85em;
   font-weight: 600;
+  color: #fff;
 }
 header .links .buy-insurance {
   font-family: "Poppins", sans-serif;
@@ -107,7 +134,7 @@ section.hero .hero-slider h1 {
   font-size: 3em;
   font-weight: 900;
   line-height: 1.2em;
-  color: #1a1c20;
+  color: #fff;
   text-align: right;
   word-spacing: -2px;
 }
@@ -127,7 +154,7 @@ section.hero .hero-slider .slider-dots .dot {
   height: 0.7em;
   width: 0.7em;
   border-radius: 50%;
-  background-color: #4d515e;
+  background-color: #4e515e;
   margin-left: 0.4em;
 }
 section.hero .hero-slider .slider-dots .dot.active {
@@ -137,19 +164,29 @@ section.hero .hero-slider .slider-dots .dot.active {
 }
 section.slider-carousel .main-slider {
   position: relative;
-  right: 3em;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: initial;
 }
 section.slider-carousel .main-slider .slider-pic {
-  height: 26em;
-  width: 46em;
+  height: 25em;
+  width: 45em;
   overflow: hidden;
+  position: relative;
+  left: -3em;
 }
-section.slider-carousel .main-slider .slider-count {
-  height: 17em;
+section.slider-carousel .main-slider .slider-actions {
+  width: 38em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  position: absolute;
+  right: 0;
+}
+section.slider-carousel .main-slider .slider-actions .slider-count {
+  height: 16.5em;
   width: 17em;
   background-color: #1a1c20;
   display: flex;
@@ -157,19 +194,55 @@ section.slider-carousel .main-slider .slider-count {
   justify-content: center;
   flex-direction: initial;
 }
-section.slider-carousel .main-slider .slider-count .count {
+section.slider-carousel .main-slider .slider-actions .slider-count .count {
   display: block;
   color: #fff;
   font-family: "Roboto Slab", serif;
   font-size: 3.5em;
   font-weight: 700;
 }
-section.slider-carousel .main-slider .slider-count .count sup {
-  font-size: 0.4em;
+section.slider-carousel .main-slider .slider-actions .slider-count .count sup {
+  font-size: 0.38em;
+  font-weight: 800;
   position: relative;
-  top: -1em;
+  top: -1.2em;
   left: -0.3em;
-  color: #4d515e;
+  color: #4e515e;
+}
+section.slider-carousel .main-slider .slider-actions .slider-line {
+  width: 16em;
+  height: 0.14em;
+  background-color: #4e515e;
+  position: absolute;
+  left: 14em;
+}
+section.slider-carousel .main-slider .slider-actions .slider-line .inner {
+  display: block;
+  height: inherit;
+  width: 40%;
+  background-color: #105de2;
+}
+section.slider-carousel .main-slider .slider-actions .slider-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  width: 5.3em;
+  float: right;
+}
+section.slider-carousel .main-slider .slider-actions .slider-navigation span {
+  height: 2.4em;
+  width: 2.4em;
+  background-color: #4e515e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: initial;
+}
+section.slider-carousel .main-slider .slider-actions .slider-navigation span svg {
+  height: 1.3em;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

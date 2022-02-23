@@ -9,14 +9,36 @@ html {
 }
 
 
-.wrapper {
+#landing {
+    position: relative;
+    overflow: hidden;
+}
 
+.landing-bg {
+    height: 70em;
+    width: 56%;
+    background-color: red;
+    background-image: url('../assets/pic-02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    &::after {
+        content: '';
+        display: block;
+        height: inherit;
+        width: 100%;
+        position: absolute;
+        background-color: rgb(26 28 32 / 80%);
+    }
 }
 
 header {
     padding: 1.5em 0;
     .logo__area {
-        padding-right: 4em;
+        padding-right: 3em;
         @include setFlex(flex, center, space-between, initial);
         .logo {
             h1 {
@@ -47,7 +69,7 @@ header {
         }
     }
     .links {
-        padding-left: 4em;
+        padding-left: 3em;
         @include setFlex(flex, center, space-between, initial);
         nav {
             ul {
@@ -56,6 +78,7 @@ header {
                     margin-right: 2.5em;
                     a {
                         @include setFont($poppins, .85em, 600);
+                        color: #fff;
                     }
                 }
             }
@@ -97,7 +120,7 @@ section {
             h1 {
                 @include setFont($robotoslab, 3em, 900);
                 line-height: 1.2em;
-                color: $matte-black;
+                color: #fff;
                 text-align: right;
                 word-spacing: -2px;  
                 span {
@@ -127,28 +150,65 @@ section {
     &.slider-carousel {
         .main-slider {
             position: relative;
-            right: 3em;
             @include setFlex(flex, flex-start, flex-start, initial);
             .slider-pic {
-                height: 26em;
-                width: 46em;
+                height: 25em;
+                width: 45em;
                 overflow: hidden;
+                position: relative;
+                left: -3em;
             }
-            .slider-count {
-                height: 17em;
-                width: 17em;
-                background-color: $matte-black;
-                @include setFlex(flex, center, center, initial);
-                .count {
-                    display: block;
-                    color: #fff;
-                    @include setFont($robotoslab, 3.5em, 700);
-                    sup {
-                        font-size: .4em;
-                        position: relative;
-                        top: -1em;
-                        left: -0.3em;
-                        color: $ash;
+            .slider-actions {
+                width: 38em;
+                @include setFlex(flex, center, space-between, initial);
+                position: absolute;
+                right: 0;
+                .slider-count {
+                    height: 16.5em;
+                    width: 17em;
+                    background-color: $matte-black;
+                    @include setFlex(flex, center, center, initial);
+                    .count {
+                        display: block;
+                        color: #fff;
+                        @include setFont($robotoslab, 3.5em, 700);
+                        sup {
+                            font-size: .38em;
+                            font-weight: 800;
+                            position: relative;
+                            top: -1.2em;
+                            left: -0.3em;
+                            color: $ash;
+                        }
+                    }
+                }
+                .slider-line {
+                    width: 16em;
+                    height: 0.14em;
+                    background-color: $ash;
+                    position: absolute;
+                    left: 14em;
+                    .inner {
+                        display: block;
+                        height: inherit;
+                        width: 40%;
+                        background-color: $blue;
+                    }
+                }
+                .slider-navigation {
+                    @include setFlex(flex, center, space-between, initial);
+                    width: 5.3em;
+                    float: right;
+                    span {
+                        height: 2.4em;
+                        width: 2.4em;
+                        background-color: $ash;
+                        border-radius: 50%;
+                        @include setFlex(flex, center, center, initial);
+                        svg {
+                            height: 1.3em;
+                            color: #fff;
+                        }
                     }
                 }
             }
