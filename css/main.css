@@ -220,7 +220,6 @@ section.slider-carousel .slider-actions .slider-navigation {
   justify-content: space-between;
   flex-direction: initial;
   width: 4.8em;
-  float: right;
 }
 section.slider-carousel .slider-actions .slider-navigation button {
   height: 2.2em;
@@ -235,6 +234,90 @@ section.slider-carousel .slider-actions .slider-navigation button {
 section.slider-carousel .slider-actions .slider-navigation button svg {
   height: 1em;
   color: #fff;
+}
+section.services {
+  position: relative;
+  padding-top: 6.5em;
+  padding-bottom: 6.5em;
+}
+section.services .header {
+  padding: 0 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  margin-bottom: 6em;
+}
+section.services .header h1.title {
+  font-family: "Roboto Slab", serif;
+  font-size: 2.2em;
+  font-weight: 800;
+  line-height: 1.2em;
+  color: #1a1c20;
+}
+section.services .header h1.title span {
+  color: #105de2;
+}
+section.services .header .slider-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  width: 4.8em;
+}
+section.services .header .slider-navigation button {
+  height: 2.2em;
+  width: 2.2em;
+  background-color: #edeff3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: initial;
+}
+section.services .header .slider-navigation button svg {
+  height: 1em;
+  color: #1a1c20;
+}
+section.services .services_grp {
+  padding: 0 2.5em;
+}
+section.services .services_grp .service img {
+  height: 2.7em;
+  margin-bottom: 2em;
+}
+section.services .services_grp .service h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.35em;
+  font-weight: 800;
+  line-height: 1.2em;
+  color: #1a1c20;
+  margin-bottom: 0.8em;
+}
+section.services .services_grp .service h1 span {
+  color: #105de2;
+}
+section.services .services_grp .service p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75em;
+  font-weight: 500;
+  padding-right: 6.5em;
+}
+section.services .services_grp .service .services-btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  background-color: #105de2;
+  color: #fff;
+  padding: 0.6em 1.8em;
+  border-radius: 4px;
+  margin-top: 1.2em;
+}
+section.services .services_grp .service.l__service {
+  padding-left: 4em;
+}
+section.services .services_grp .service.l__service h1 {
+  line-height: 1.4em;
 }
 
 /*# sourceMappingURL=main.css.map */

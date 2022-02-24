@@ -38,7 +38,6 @@ html {
 header {
     padding: 1.5em 0;
     .logo__area {
-        // padding-right: 3em;
         padding: 0 2.5em;
         @include setFlex(flex, center, space-between, initial);
         .logo {
@@ -70,7 +69,6 @@ header {
         }
     }
     .links {
-        // padding-left: 3em;
         padding: 0 2.5em;
         @include setFlex(flex, center, space-between, initial);
         nav {
@@ -194,7 +192,6 @@ section {
             .slider-navigation {
                 @include setFlex(flex, center, space-between, initial);
                 width: 4.8em;
-                float: right;
                 button {
                     height: 2.2em;
                     width: 2.2em;
@@ -209,4 +206,71 @@ section {
             }
         }
     }
+
+    &.services {
+        position: relative;
+        padding-top: 6.5em;
+        padding-bottom: 6.5em;
+        .header {
+            padding: 0 2.5em;
+            @include setFlex(flex, center, space-between, initial);
+            margin-bottom: 6em;
+            h1.title {
+                @include setFont($robotoslab, 2.2em, 800);
+                line-height: 1.2em;
+                color: $matte-black;
+                span {
+                    color: $blue;
+                }
+            }
+            .slider-navigation {
+                @include setFlex(flex, center, space-between, initial);
+                width: 4.8em;
+                button {
+                    height: 2.2em;
+                    width: 2.2em;
+                    background-color: $off-white;
+                    border-radius: 50%;
+                    @include setFlex(flex, center, center, initial);
+                    svg {
+                        height: 1em;
+                        color: $matte-black;
+                    }
+                }
+            }
+        }
+        .services_grp {
+            padding: 0 2.5em;
+            .service {
+                img {
+                    height: 2.7em;
+                    margin-bottom: 2em;
+                }
+                h1 {
+                    @include setFont($robotoslab, 1.35em, 800);
+                    line-height: 1.2em;
+                    color: $matte-black;
+                    margin-bottom: .8em;
+                    span {
+                        color: $blue;
+                    }
+                }
+                p {
+                    @include setFont($poppins, .75em, 500);
+                    padding-right: 6.5em;
+                }
+                .services-btn {
+                    @include btn;
+                    margin-top: 1.2em;
+                }
+                &.l__service {
+                    padding-left: 4em;
+                    h1 {
+                        line-height: 1.4em;
+                    }
+                }
+            }
+        }
+    }
 }
+
