@@ -11,22 +11,13 @@ html {
 .landing-bg {
   height: 70em;
   width: 56%;
-  background-color: red;
-  background-image: url("../assets/pic-02.jpg");
+  background-image: url("../assets/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 50%;
   position: absolute;
   right: 0;
   z-index: -1;
-}
-.landing-bg::after {
-  content: "";
-  display: block;
-  height: inherit;
-  width: 100%;
-  position: absolute;
-  background-color: rgba(26, 28, 32, 0.8);
 }
 
 header {
@@ -124,7 +115,7 @@ section.hero .hero-theme .title img {
 }
 section.hero .hero-theme .content {
   font-family: "Poppins", sans-serif;
-  font-size: 0.85em;
+  font-size: 0.8em;
   font-weight: 500;
   line-height: 1.7em;
   color: #1a1c20;
@@ -259,6 +250,7 @@ section.services .header h1.title span {
   color: #105de2;
 }
 section.services .header .slider-navigation {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -278,6 +270,15 @@ section.services .header .slider-navigation button {
 section.services .header .slider-navigation button svg {
   height: 1em;
   color: #1a1c20;
+}
+section.services .header .slider-navigation::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 16em;
+  height: 0.2em;
+  background-color: #edeff3;
+  right: 8em;
 }
 section.services .services_grp {
   padding: 0 2.5em;
@@ -299,9 +300,9 @@ section.services .services_grp .service h1 span {
 }
 section.services .services_grp .service p {
   font-family: "Poppins", sans-serif;
-  font-size: 0.75em;
+  font-size: 0.8em;
   font-weight: 500;
-  padding-right: 6.5em;
+  padding-right: 2.5em;
 }
 section.services .services_grp .service .services-btn {
   font-family: "Poppins", sans-serif;
@@ -313,11 +314,73 @@ section.services .services_grp .service .services-btn {
   border-radius: 4px;
   margin-top: 1.2em;
 }
-section.services .services_grp .service.l__service {
-  padding-left: 4em;
-}
 section.services .services_grp .service.l__service h1 {
   line-height: 1.4em;
+}
+section.about {
+  height: 800px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 12em;
+}
+section.about .about-bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 700px;
+  background-image: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.about .about-img {
+  position: absolute;
+  top: 14em;
+  left: -6em;
+  width: 35em;
+}
+section.about .about-content {
+  padding-top: 6em;
+  padding-right: 2.5em;
+}
+section.about .about-content h1.title {
+  font-family: "Roboto Slab", serif;
+  font-size: 2.2em;
+  font-weight: 800;
+  line-height: 1.2em;
+  color: #fff;
+  margin-bottom: 1em;
+}
+section.about .about-content h1.title span {
+  color: #105de2;
+}
+section.about .about-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.6em;
+  margin-bottom: 2em;
+}
+section.about .about-content .btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  background-color: #105de2;
+  color: #fff;
+  padding: 0.6em 1.8em;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 5em;
+}
+
+.ash-backdrop {
+  position: absolute;
+  z-index: -9;
+  top: 45em;
+  left: 0;
+  height: 82em;
+  width: 70%;
+  background-color: #edeff3;
 }
 
 /*# sourceMappingURL=main.css.map */

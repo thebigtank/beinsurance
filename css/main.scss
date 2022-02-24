@@ -17,22 +17,13 @@ html {
 .landing-bg {
     height: 70em;
     width: 56%;
-    background-color: red;
-    background-image: url('../assets/pic-02.jpg');
+    background-image: url('../assets/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 50%;
     position: absolute;
     right: 0;
     z-index: -1;
-    &::after {
-        content: '';
-        display: block;
-        height: inherit;
-        width: 100%;
-        position: absolute;
-        background-color: rgb(26 28 32 / 80%);
-    }
 }
 
 header {
@@ -111,7 +102,7 @@ section {
                 }
             }
             .content {
-                @include setFont($poppins, .85em, 500);
+                @include setFont($poppins, .8em, 500);
                 line-height: 1.7em;
                 color: $matte-black;
             }
@@ -224,6 +215,7 @@ section {
                 }
             }
             .slider-navigation {
+                position: relative;
                 @include setFlex(flex, center, space-between, initial);
                 width: 4.8em;
                 button {
@@ -236,6 +228,15 @@ section {
                         height: 1em;
                         color: $matte-black;
                     }
+                }
+                &::before {
+                    content: " ";
+                    position: absolute;
+                    display: block;
+                    width: 16em;
+                    height: .2em;
+                    background-color: $off-white;
+                    right: 8em;
                 }
             }
         }
@@ -256,15 +257,15 @@ section {
                     }
                 }
                 p {
-                    @include setFont($poppins, .75em, 500);
-                    padding-right: 6.5em;
+                    @include setFont($poppins, .8em, 500);
+                    padding-right: 2.5em;
                 }
                 .services-btn {
                     @include btn;
                     margin-top: 1.2em;
                 }
                 &.l__service {
-                    padding-left: 4em;
+                    // padding-left: 2em;
                     h1 {
                         line-height: 1.4em;
                     }
@@ -272,5 +273,61 @@ section {
             }
         }
     }
+
+    &.about {
+        height: 800px;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 12em;
+        .about-bg {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 700px;
+            background-image: url('../assets/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .about-img {
+            position: absolute;
+            top: 14em;
+            left: -6em;
+            width: 35em;
+        }
+        .about-content {
+            padding-top: 6em;
+            padding-right: 2.5em;
+            h1.title {
+                @include setFont($robotoslab, 2.2em, 800);
+                line-height: 1.2em;
+                color: #fff;
+                margin-bottom: 1em;
+                span {
+                    color: $blue;
+                }
+            }
+            p {
+                @include setFont($poppins, .8em, 400);
+                color: #fff;
+                line-height: 1.6em;
+                margin-bottom: 2em;
+            }
+            .btn {
+                @include btn;
+                display: inline-block;
+                margin-top: 5em;
+            }
+        }
+    }
+}
+
+.ash-backdrop {
+    position: absolute;
+    z-index: -9;
+    top: 45em;
+    left: 0;
+    height: 82em;
+    width: 70%;
+    background-color: $off-white;
 }
 
