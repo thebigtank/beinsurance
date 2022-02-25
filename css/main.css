@@ -297,7 +297,7 @@ section.services .services_grp .service h1 span {
 }
 section.services .services_grp .service p {
   font-family: "Poppins", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.85em;
   font-weight: 500;
   padding-right: 2.5em;
 }
@@ -351,7 +351,7 @@ section.about .about-content h1.title span {
 }
 section.about .about-content p {
   font-family: "Poppins", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.85em;
   font-weight: 400;
   color: #fff;
   line-height: 1.6em;
@@ -411,7 +411,7 @@ section.achivements .achivements_grp .achivement .head .sub {
 }
 section.achivements .achivements_grp .achivement h1 {
   font-family: "Roboto Slab", serif;
-  font-size: 1.2em;
+  font-size: 1.25em;
   font-weight: 800;
   line-height: 1.2em;
   color: #1a1c20;
@@ -419,8 +419,8 @@ section.achivements .achivements_grp .achivement h1 {
 }
 section.achivements .achivements_grp .achivement p {
   font-family: "Poppins", sans-serif;
-  font-size: 0.8em;
-  font-weight: 500;
+  font-size: 0.95em;
+  font-weight: 400;
   padding-right: 3em;
 }
 
@@ -621,8 +621,34 @@ footer .copyright-area .social-links ul li a img {
   top: 45em;
   left: 0;
   height: 75em;
-  width: 70%;
+  width: 68.5%;
   background-color: #edeff3;
+}
+
+@media (max-width: 1600px) {
+  .ash-backdrop {
+    width: 72%;
+  }
+}
+@media (max-width: 1536px) {
+  .ash-backdrop {
+    width: 74%;
+  }
+}
+@media (max-width: 1440px) {
+  .ash-backdrop {
+    width: 74.5%;
+  }
+}
+@media (max-width: 1366px) {
+  .ash-backdrop {
+    width: 76%;
+  }
+}
+@media (max-width: 1280px) {
+  .ash-backdrop {
+    width: 78%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

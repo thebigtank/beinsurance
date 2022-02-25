@@ -204,7 +204,6 @@ section {
         padding-top: 5.5em;
         padding-bottom: 2em;
         .header {
-            // padding: 0 2.5em;
             @include setFlex(flex, center, space-between, initial);
             margin-bottom: 6em;
             h1.title {
@@ -242,7 +241,6 @@ section {
             }
         }
         .services_grp {
-            // padding: 0 2.5em;
             .service {
                 img {
                     height: 2.7em;
@@ -258,7 +256,7 @@ section {
                     }
                 }
                 p {
-                    @include setFont($poppins, .8em, 500);
+                    @include setFont($poppins, .85em, 500);
                     padding-right: 2.5em;
                 }
                 .services-btn {
@@ -306,7 +304,7 @@ section {
                 }
             }
             p {
-                @include setFont($poppins, .8em, 400);
+                @include setFont($poppins, .85em, 400);
                 color: #fff;
                 line-height: 1.6em;
                 margin-bottom: 2em;
@@ -355,13 +353,13 @@ section {
                     }
                 }
                 h1 {
-                    @include setFont($robotoslab, 1.2em, 800);
+                    @include setFont($robotoslab, 1.25em, 800);
                     line-height: 1.2em;
                     color: $matte-black;
                     margin-bottom: .8em;
                 }
                 p {
-                    @include setFont($poppins, .8em, 500);
+                    @include setFont($poppins, .95em, 400);
                     padding-right: 3em;
                 }
             }
@@ -533,7 +531,38 @@ footer {
     top: 45em;
     left: 0;
     height: 75em;
-    width: 70%;
+    width: 68.5%;
     background-color: $off-white;
 }
 
+// Responsive Fixes
+
+@media (max-width: 1600px) { 
+    .ash-backdrop {
+        width: 72%;
+    }
+}
+
+@media (max-width: 1536px) { 
+    .ash-backdrop {
+        width: 74%;
+    }
+}
+
+@media (max-width: 1440px) { 
+    .ash-backdrop {
+        width: 74.5%;
+    }
+}
+
+@media (max-width: 1366px) { 
+    .ash-backdrop {
+        width: 76%;
+    }
+}
+
+@media (max-width: 1280px) { 
+    .ash-backdrop {
+        width: 78%;
+    }
+}
