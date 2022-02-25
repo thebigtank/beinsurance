@@ -200,10 +200,11 @@ section {
 
     &.services {
         position: relative;
-        padding-top: 6.5em;
-        padding-bottom: 6.5em;
+        padding: 0 2.5em;
+        padding-top: 5.5em;
+        padding-bottom: 2em;
         .header {
-            padding: 0 2.5em;
+            // padding: 0 2.5em;
             @include setFlex(flex, center, space-between, initial);
             margin-bottom: 6em;
             h1.title {
@@ -241,7 +242,7 @@ section {
             }
         }
         .services_grp {
-            padding: 0 2.5em;
+            // padding: 0 2.5em;
             .service {
                 img {
                     height: 2.7em;
@@ -265,7 +266,6 @@ section {
                     margin-top: 1.2em;
                 }
                 &.l__service {
-                    // padding-left: 2em;
                     h1 {
                         line-height: 1.4em;
                     }
@@ -278,7 +278,6 @@ section {
         height: 800px;
         width: 100%;
         overflow: hidden;
-        margin-bottom: 12em;
         .about-bg {
             position: absolute;
             z-index: -1;
@@ -319,6 +318,118 @@ section {
             }
         }
     }
+
+    &.achivements {
+        position: relative;
+        padding-left: 2.5em;
+        padding-bottom: 6em;
+        .header {
+            // padding: 0 2.5em;
+            @include setFlex(flex, center, space-between, initial);
+            margin-bottom: 4em;
+            h1.title {
+                @include setFont($robotoslab, 2.2em, 800);
+                line-height: 1.2em;
+                color: $matte-black;
+                span {
+                    color: $blue;
+                }
+            }
+        }
+        .achivements_grp {
+            .achivement {
+                .head {
+                    @include setFlex(flex, center, initial, initial);
+                    font-family: $robotoslab;
+                    margin-bottom: 1.6em;
+                    span {
+                        color: $blue;
+                        font-weight: 800;
+                    }
+                    .main {
+                        font-size: 2.7em;
+                    }
+                    .sub {
+                        font-size: 1.1em;
+                        margin-left: .8em;
+                    }
+                }
+                h1 {
+                    @include setFont($robotoslab, 1.1em, 900);
+                    line-height: 1.2em;
+                    color: $matte-black;
+                    margin-bottom: .8em;
+                }
+                p {
+                    @include setFont($poppins, .8em, 500);
+                    padding-right: 3em;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: relative;
+    border-top: 2px solid $off-white;
+    margin-bottom: 10em;
+    .footer-header {
+        padding: 0 2.5em;
+        padding-top: 2.5em;
+        @include setFlex(flex, center, space-between, initial);
+        .title {
+            @include setFlex(flex, center, initial, initial);
+            h1 {
+                @include setFont($robotoslab, 1.5em, 800);
+                color: $matte-black;
+                span {
+                    color: $blue;
+                }
+            }
+            .call-ico {
+                margin-left: 1em;
+                height: 1.8em;
+                width: 1.8em;
+                border: 3px solid $blue;
+                border-radius: 50%;
+                @include setFlex(flex, center, center, initial);
+                img {
+                    height: .7em;
+                }
+            }
+        }
+        .btn {
+            @include btn;
+        }
+    }
+    .footer-body {
+        padding: 0 2.5em;
+        margin-top: 2.5em;
+        @include setFlex(flex, top, space-between, initial);
+        .footer-links {
+            @include setFlex(flex, top, space-between, initial);
+            .link-grp {
+                margin-right: 4em;
+                .title {
+                    display: block;
+                    @include setFont($robotoslab, .95em, 700);
+                    margin-bottom: 1em;
+                }
+                ul{
+                    li {
+                        margin-bottom: -0.1em;
+                         a{
+                             @include setFont($poppins, .75em, 400);
+                             color: $light-text;
+                         }
+                    }
+                }
+            }
+        }
+        .contact {
+
+        }
+    }
 }
 
 .ash-backdrop {
@@ -326,7 +437,7 @@ section {
     z-index: -9;
     top: 45em;
     left: 0;
-    height: 82em;
+    height: 75em;
     width: 70%;
     background-color: $off-white;
 }

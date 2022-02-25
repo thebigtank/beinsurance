@@ -228,11 +228,11 @@ section.slider-carousel .slider-actions .slider-navigation button svg {
 }
 section.services {
   position: relative;
-  padding-top: 6.5em;
-  padding-bottom: 6.5em;
+  padding: 0 2.5em;
+  padding-top: 5.5em;
+  padding-bottom: 2em;
 }
 section.services .header {
-  padding: 0 2.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -280,9 +280,6 @@ section.services .header .slider-navigation::before {
   background-color: #edeff3;
   right: 8em;
 }
-section.services .services_grp {
-  padding: 0 2.5em;
-}
 section.services .services_grp .service img {
   height: 2.7em;
   margin-bottom: 2em;
@@ -321,7 +318,6 @@ section.about {
   height: 800px;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 12em;
 }
 section.about .about-bg {
   position: absolute;
@@ -372,13 +368,152 @@ section.about .about-content .btn {
   display: inline-block;
   margin-top: 5em;
 }
+section.achivements {
+  position: relative;
+  padding-left: 2.5em;
+  padding-bottom: 6em;
+}
+section.achivements .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  margin-bottom: 4em;
+}
+section.achivements .header h1.title {
+  font-family: "Roboto Slab", serif;
+  font-size: 2.2em;
+  font-weight: 800;
+  line-height: 1.2em;
+  color: #1a1c20;
+}
+section.achivements .header h1.title span {
+  color: #105de2;
+}
+section.achivements .achivements_grp .achivement .head {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: initial;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 1.6em;
+}
+section.achivements .achivements_grp .achivement .head span {
+  color: #105de2;
+  font-weight: 800;
+}
+section.achivements .achivements_grp .achivement .head .main {
+  font-size: 2.7em;
+}
+section.achivements .achivements_grp .achivement .head .sub {
+  font-size: 1.1em;
+  margin-left: 0.8em;
+}
+section.achivements .achivements_grp .achivement h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.1em;
+  font-weight: 900;
+  line-height: 1.2em;
+  color: #1a1c20;
+  margin-bottom: 0.8em;
+}
+section.achivements .achivements_grp .achivement p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  padding-right: 3em;
+}
 
+footer {
+  position: relative;
+  border-top: 2px solid #edeff3;
+  margin-bottom: 10em;
+}
+footer .footer-header {
+  padding: 0 2.5em;
+  padding-top: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+footer .footer-header .title {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: initial;
+}
+footer .footer-header .title h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #1a1c20;
+}
+footer .footer-header .title h1 span {
+  color: #105de2;
+}
+footer .footer-header .title .call-ico {
+  margin-left: 1em;
+  height: 1.8em;
+  width: 1.8em;
+  border: 3px solid #105de2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: initial;
+}
+footer .footer-header .title .call-ico img {
+  height: 0.7em;
+}
+footer .footer-header .btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  background-color: #105de2;
+  color: #fff;
+  padding: 0.6em 1.8em;
+  border-radius: 4px;
+}
+footer .footer-body {
+  padding: 0 2.5em;
+  margin-top: 2.5em;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+footer .footer-body .footer-links {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+footer .footer-body .footer-links .link-grp {
+  margin-right: 4em;
+}
+footer .footer-body .footer-links .link-grp .title {
+  display: block;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.95em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+footer .footer-body .footer-links .link-grp ul li {
+  margin-bottom: -0.1em;
+}
+footer .footer-body .footer-links .link-grp ul li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75em;
+  font-weight: 400;
+  color: #939393;
+}
 .ash-backdrop {
   position: absolute;
   z-index: -9;
   top: 45em;
   left: 0;
-  height: 82em;
+  height: 75em;
   width: 70%;
   background-color: #edeff3;
 }
