@@ -380,7 +380,7 @@ footer {
         .title {
             @include setFlex(flex, center, initial, initial);
             h1 {
-                @include setFont($robotoslab, 1.5em, 800);
+                @include setFont($robotoslab, 1.8em, 700);
                 color: $matte-black;
                 span {
                     color: $blue;
@@ -412,14 +412,14 @@ footer {
                 margin-right: 4em;
                 .title {
                     display: block;
-                    @include setFont($robotoslab, .95em, 700);
+                    @include setFont($robotoslab, 1em, 700);
                     margin-bottom: 1em;
                 }
                 ul{
                     li {
                         margin-bottom: -0.1em;
                          a{
-                             @include setFont($poppins, .75em, 400);
+                             @include setFont($poppins, .8em, 400);
                              color: $light-text;
                          }
                     }
@@ -427,7 +427,44 @@ footer {
             }
         }
         .contact {
+            @include setFlex(flex, center, space-between, initial);
+            .contact-data {
+                text-align: right;
+                margin-right: 2em;
+                h2 {
+                    @include setFont($robotoslab, 1em, 600);
+                    margin-bottom: 1em;
+                }
+                .contact-grp {
+                    span {
+                        display: block;
+                        @include setFont($poppins, .9em, 400);
+                        margin-bottom: .25em;
+                        &.name {
+                            text-transform: capitalize;
+                            font-weight: 600;
+                            color: $blue;
+                        }
+                        &.location {
+                            text-transform: capitalize;
+                            color: $light-text;
+                        }
+                        &.mobile, &.email {
+                            color: $matte-black;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            .avatar {
+                height: 7.5em;
+                width: 7.5em;
+                border-radius: 50%;
+                overflow: hidden;
+                img {
 
+                }
+            }
         }
     }
 }

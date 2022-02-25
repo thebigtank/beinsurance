@@ -445,8 +445,8 @@ footer .footer-header .title {
 }
 footer .footer-header .title h1 {
   font-family: "Roboto Slab", serif;
-  font-size: 1.5em;
-  font-weight: 800;
+  font-size: 1.8em;
+  font-weight: 700;
   color: #1a1c20;
 }
 footer .footer-header .title h1 span {
@@ -495,7 +495,7 @@ footer .footer-body .footer-links .link-grp {
 footer .footer-body .footer-links .link-grp .title {
   display: block;
   font-family: "Roboto Slab", serif;
-  font-size: 0.95em;
+  font-size: 1em;
   font-weight: 700;
   margin-bottom: 1em;
 }
@@ -504,9 +504,51 @@ footer .footer-body .footer-links .link-grp ul li {
 }
 footer .footer-body .footer-links .link-grp ul li a {
   font-family: "Poppins", sans-serif;
-  font-size: 0.75em;
+  font-size: 0.8em;
   font-weight: 400;
   color: #939393;
+}
+footer .footer-body .contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+footer .footer-body .contact .contact-data {
+  text-align: right;
+  margin-right: 2em;
+}
+footer .footer-body .contact .contact-data h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+footer .footer-body .contact .contact-data .contact-grp span {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  margin-bottom: 0.25em;
+}
+footer .footer-body .contact .contact-data .contact-grp span.name {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #105de2;
+}
+footer .footer-body .contact .contact-data .contact-grp span.location {
+  text-transform: capitalize;
+  color: #939393;
+}
+footer .footer-body .contact .contact-data .contact-grp span.mobile, footer .footer-body .contact .contact-data .contact-grp span.email {
+  color: #1a1c20;
+  font-weight: 500;
+}
+footer .footer-body .contact .avatar {
+  height: 7.5em;
+  width: 7.5em;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .ash-backdrop {
   position: absolute;
