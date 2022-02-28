@@ -80,6 +80,7 @@ header {
     }
 }
 
+
 section {
     position: relative;
     padding-top: 5.5em;
@@ -367,6 +368,17 @@ section {
     }
 }
 
+
+.ash-backdrop {
+    position: absolute;
+    z-index: -9;
+    top: 45em;
+    left: 0;
+    height: 75em;
+    width: 68.5%;
+    background-color: $off-white;
+}
+
 footer {
     position: relative;
     border-top: 2px solid $off-white;
@@ -525,44 +537,3 @@ footer {
     }
 }
 
-.ash-backdrop {
-    position: absolute;
-    z-index: -9;
-    top: 45em;
-    left: 0;
-    height: 75em;
-    width: 68.5%;
-    background-color: $off-white;
-}
-
-// Responsive Fixes
-
-@media (max-width: 1600px) { 
-    .ash-backdrop {
-        width: 72%;
-    }
-}
-
-@media (max-width: 1536px) { 
-    .ash-backdrop {
-        width: 74%;
-    }
-}
-
-@media (max-width: 1440px) { 
-    .ash-backdrop {
-        width: 74.5%;
-    }
-}
-
-@media (max-width: 1366px) { 
-    .ash-backdrop {
-        width: 76%;
-    }
-}
-
-@media (max-width: 1280px) { 
-    .ash-backdrop {
-        width: 78%;
-    }
-}

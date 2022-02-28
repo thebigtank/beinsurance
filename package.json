@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "watch-sass": "sass -w css/main.scss css/main.css"
+    "watch-sass": "sass -w css/main.scss css/main.css",
+    "watch-sass-res": "sass -w css/responsive.scss css/responsive.css"
   },
   "keywords": [],
   "author": "",

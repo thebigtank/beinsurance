@@ -424,6 +424,16 @@ section.achivements .achivements_grp .achivement p {
   padding-right: 3em;
 }
 
+.ash-backdrop {
+  position: absolute;
+  z-index: -9;
+  top: 45em;
+  left: 0;
+  height: 75em;
+  width: 68.5%;
+  background-color: #edeff3;
+}
+
 footer {
   position: relative;
   border-top: 2px solid #edeff3;
@@ -613,42 +623,6 @@ footer .copyright-area .social-links ul li {
 }
 footer .copyright-area .social-links ul li a img {
   height: 1.1em;
-}
-
-.ash-backdrop {
-  position: absolute;
-  z-index: -9;
-  top: 45em;
-  left: 0;
-  height: 75em;
-  width: 68.5%;
-  background-color: #edeff3;
-}
-
-@media (max-width: 1600px) {
-  .ash-backdrop {
-    width: 72%;
-  }
-}
-@media (max-width: 1536px) {
-  .ash-backdrop {
-    width: 74%;
-  }
-}
-@media (max-width: 1440px) {
-  .ash-backdrop {
-    width: 74.5%;
-  }
-}
-@media (max-width: 1366px) {
-  .ash-backdrop {
-    width: 76%;
-  }
-}
-@media (max-width: 1280px) {
-  .ash-backdrop {
-    width: 78%;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
