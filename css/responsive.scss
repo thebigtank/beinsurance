@@ -2,6 +2,8 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 // Responsive Fixes
+
+
 // Desktop Breakpoints
 
 @media (max-width: 1600px) { 
@@ -117,7 +119,127 @@
         .links-area {
             .footer-links {
                 .link-grp {
-                    margin-right: 3em;
+                    margin-right: 2em;
+                }
+            }
+        }
+        .copyright-area {
+            .social-links {
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) { 
+    .ash-backdrop {
+        display: none;
+    }
+    
+    .landing-bg {
+        width: 50%;
+    }
+
+    header {
+        .logo__area {
+            padding-right: 0;
+            .mobile-num {
+                display: none;
+            }
+        }
+    }
+
+    section {
+        padding-top: 3.5em;
+        &.hero {
+            .hero-theme {
+                .title {
+                    margin-bottom: 1.4em;
+                    h1 {
+                        font-size: 1.8em;
+                    }
+                }
+            }
+            .hero-slider {
+                h1 {
+                    font-size: 2em;
+                }
+            }
+        }
+        &.slider-carousel {
+            padding-top: 1.5em;
+            .slider-actions {
+                .slider-line {
+                    left: 11em;
+                    width: 9.5em;
+                }
+                .slider-navigation {
+                    position: relative;
+                    bottom: 2em;
+                    left: 3em;
+                }
+            }
+        }
+        &.services {
+            padding-top: 3em;
+            .header {
+                margin-bottom: 4em;
+                .slider-navigation {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.about {
+            height: 550px;
+            padding-top: .2em;
+            .about-img {
+                display: none;
+            }
+            .about-content {
+                padding-left: 2.5em;
+                padding-top: 2.2em;
+                .btn {
+                    margin-top: 4em;
+                }
+            }
+        }
+        &.achivements {
+            padding-top: 3em;
+        }
+    }
+
+    footer {
+        margin-bottom: 1.5em;
+        .header-area {
+            .title {
+                h1 {
+                    font-size: 1.4em;
+                }
+                .call-ico {
+                    height: 1.6em;
+                    width: 1.6em;
+                    border-width: 2px;
+                    img {
+                        height: .7em;
+                    }
+                }
+            }
+        }
+        .links-area {
+            .footer-links {
+                width: 60%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                .link-grp {
+                    margin-bottom: 1em;
+                    .title {
+                        margin-bottom: .5em;
+                    }
                 }
             }
         }
